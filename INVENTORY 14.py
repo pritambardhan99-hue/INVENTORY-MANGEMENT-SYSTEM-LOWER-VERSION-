@@ -1792,8 +1792,7 @@ class SectionCustomers(tk.Frame):
 
             if mode in ("email", "both") and recipients_mail:
                 self.send_bulk_mail(subject or "Notification", message,
-                                    "lalbaghenterprises", "lojn yuaa tcfn rqxa", recipients_mail)
-
+                                    
             if mode in ("sms", "both") and recipients_sms:
                 self.send_bulk_sms(message, recipients_sms)
 
@@ -3639,3 +3638,4 @@ if __name__ == "__main__":
     app = InventoryApp()
 
     app.mainloop()
+
